@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Adivina el número secreto</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .container {
+            display: inline-block;
+        }
+        .container__text {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Adivina el número secreto</h1>
+        <div class="container__text">
+            <p>Ingresa un número entero entre 1 y 10:</p>
+            <input type="number" id="userInput" min="1" max="10">
+            <button id="guessButton">Adivinar</button>
+        </div>
+        <img src="./img/robot.png" alt="Robot" class="container__image-robot" />
+        <div class="container__informations">
+            <img src="./img/trophy.png" alt="Icon of trophy" />
+        </div>
+        <h2 id="result"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
